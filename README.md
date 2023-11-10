@@ -21,6 +21,12 @@ Full example of 1PAY.network integration for Android app
 
     <script src="./renderer.js"></script>
     <script src="https://1pay.network/onepay.js?recipient=0x8d70EC40AAd376aa6fD08e4CFD363EaC0AB2c174&network=ethereum,arbitrum,optimism,bsc&token=usdt,usdc,dai"></script>
+    <script>
+      // handle payment sudccessful callback
+      const onepaySuccess = (PaymentResponse) => {
+        console.log(PaymentResponse)
+      }
+    </script>
   </body>
 </html>
 ```
